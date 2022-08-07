@@ -1,5 +1,4 @@
 <?php
-    require_once 'functions.inc.php';
     session_start();
 
     if(!isset($_SESSION['logged'])){
