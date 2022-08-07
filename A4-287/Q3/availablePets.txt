@@ -1,3 +1,0 @@
-1:jeff123:dog/::5:husky:female/:dogs, cats:It's a nice husky.
-2:jeff123:cat/:mixed:5:siamese:female/:dogs, cats, children:It's a cat
-3:jeff123:cat/:mixed:10:sic:male/::It's a senior sic.
