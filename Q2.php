@@ -1,5 +1,6 @@
 <?php
 session_start();
+setcookie("lastVisit", date("Y-m-d H:i:s"),time()+60*60*24*365); 
 ?>
 <html> 
   <head> 
@@ -7,8 +8,6 @@ session_start();
  </head> 
 <body> 
 <?php 
-
-setcookie("lastVisit", date("Y-m-d H:i:s"),time()+60*60*24*365); 
 
 if (!isset($_COOKIE['count'])) { 
   echo "Welcome! This is the first time you have viewed this page."; 
