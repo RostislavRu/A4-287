@@ -10,7 +10,7 @@
             $line = fgets($file);
             list($username, $password) = explode(':', $line);
             if(trim($username) == $user && trim($password) == $pass){
-                session_start();
+                if(session_status() != PHP_SESSION_ACTIVE) session_start();
                 $_SESSION['user'] = $user;
                 $_SESSION['logged'] = 'yes';
             
