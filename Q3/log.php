@@ -1,6 +1,5 @@
 <?php 
     if(session_status() != PHP_SESSION_ACTIVE) session_start();
-    require_once 'functions.inc.php';
 
     function loginUser($user, $pass){
         $file = fopen('login.txt', 'r') or die("Can't open file");
