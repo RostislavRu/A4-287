@@ -2,9 +2,9 @@
 session_start();
 setcookie("lastVisit", date("Y-m-d H:i:s"),time()+60*60*24*365); 
 if (!isset($_COOKIE['count'])) { 
-  echo "Welcome! This is the first time you have viewed this page."; 
   $cookie = 1;
   setcookie("count", $cookie);
+  echo "Welcome! This is the first time you have viewed this page.";
   //setcookie(“lastVisit”, date(“F j, Y, g:i a”),time()+60*60*24*365); 
 }else{
   $cookie = ++$_COOKIE['count'];
